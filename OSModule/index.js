@@ -1,12 +1,12 @@
-const os = require("os");
-console.log(os.arch());
+import { arch, hostname, homedir, type, freemem, totalmem } from "os";
+console.log(arch());
 
-console.log(os.hostname());
-console.log(os.homedir());
-console.log(os.type());
+console.log(hostname());
+console.log(homedir());
+console.log(type());
 
-const freeMemory = os.freemem();
+const freeMemory = freemem();
 console.log(`${freeMemory / 1024 / 1024 / 1024}`);
 
-const totalMemory = os.totalmem();
+const totalMemory = totalmem();
 console.log(`${totalMemory/1024/1024/1024}`);

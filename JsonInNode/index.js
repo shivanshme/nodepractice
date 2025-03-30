@@ -1,6 +1,6 @@
 //Javascript object notation(JSON)
 //used when data is sent from server
-const fs = require("fs");
+import { writeFile, readFile } from "fs";
 const biodata = {
     name: "Shivansh ",
     age: 23,
@@ -11,10 +11,10 @@ console.log(biodata.lastname);
 const jsonData = JSON.stringify(biodata);     //to convert object into json
 console.log(jsonData);
 
-fs.writeFile("json1.json", jsonData, (err) => {
+writeFile("json1.json", jsonData, (err) => {
     console.log("done");
 });
-fs.readFile("json1.json", "utf-8", (err, data) => {
+readFile("json1.json", "utf-8", (err, data) => {
     //console.log(data);
     const orginal = JSON.parse(data);
     console.log(orginal.age);

@@ -1,4 +1,4 @@
-const { add,sub ,name} = require('./oper');
+import { add, sub, name } from './oper';
 //const add=require('./oper');
 //console.log(oper);
 console.log(add(5, 5));
