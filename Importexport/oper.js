@@ -7,6 +7,6 @@ const sub = (a,b) => {
 const name = "shivansh";
 // module.exports.add = add;
 // module.exports.sub = sub;
-module.exports = { add, sub ,name};
+export default { add, sub ,name};
 
 //module.exports = name;
